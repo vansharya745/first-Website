@@ -1,0 +1,143 @@
+.header{
+                display: flex;
+                flex-direction: row;
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                left: 0px;
+                height: 57px;
+                border-bottom: 1px solid rgb(200,200,200);
+                z-index: 200;
+                background-color: white;
+                justify-content: space-between;
+            }
+
+            .left-section{
+                width: 170px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .hamburger-icon{
+                height: 24px;
+                width: 24px;
+                margin-left: 23px;
+            }
+            .hamburger-icon:hover, .youtube-icon:hover, .search-icon:hover, .voice-search-icon:hover, .create-icon-button:hover, .youtube-apps-icon-button:hover, .notifications-icon-button:hover, .profile-picture:hover{
+                cursor: pointer;
+            }
+            .search-icon:hover{
+                background-color: rgb(232, 230, 230);
+            }
+
+            .youtube-icon{
+                height: 24px;
+                width: 90px;
+                margin-right: 8px;
+            }
+
+            .middle-section{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 15px;
+            }
+
+            .search-bar{
+                height: 37px;
+                width: 4px;
+                border: 1px solid rgb(200,200,200);
+                font-size: 15px;
+                transition: border-color 0.15s;
+                flex:1;
+                max-width: 320px;
+                box-shadow: inset 0px 1px 1px rgb(238,238,238);
+                padding-left:13px;
+            }
+            .search-bar:focus{
+                border-color:  blue;
+                outline: none;
+            }
+
+            .tooltip{
+                position: absolute;
+                background-color: rgb(77, 77, 77);
+                color: white;
+                padding: 8px 8px;
+                font-size: 12.5px;
+                bottom: -50px;
+                left: 5.5px;
+                border-radius: 2px;
+                opacity: 0;
+                transition: opacity 0.15s;
+                white-space: nowrap;
+                left: 50%;
+                translate: -50%;
+            }
+
+            .search-button:hover .tooltip, .voice-search-icon-button:hover .tooltip, .create-icon-button:hover .tooltip, .youtube-apps-icon-button:hover .tooltip, .notifications-icon-button:hover .tooltip{
+                opacity: 0.8;
+            }
+            .tooltip:hover{
+                display: none;
+            }
+
+            .number-of-notifications{
+                position: absolute;
+                top: 0px;
+                right:-4px;
+                background-color: rgb(206, 2, 2);
+                color: white;
+                padding: 1px 5px;
+                border-radius: 100px;
+                font-size: 10px;
+            }
+
+            .search-button, .voice-search-icon-button, .create-icon-button, .youtube-apps-icon-button, .notifications-icon-button{
+                position: relative;
+            }
+            
+            .search-icon{
+                height: 40px;
+                width: 60px;
+                margin-left: 0px;
+                border: 1px solid rgb(200,200,200);
+                border-left: none;
+                background-color: rgb(247,247,247);
+            }
+
+            .search-icon-image, .voice-search-icon-image{
+                height: 24px;
+                width: 24px;
+            }
+
+            .voice-search-icon{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                background-color:  rgb(248,248,248);
+                border: none;
+                margin-left: 8px;
+            }
+
+            .right-section{
+                width: 182.5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 25px;
+            }
+
+            .create-icon, .youtube-apps-icon, .notifications-icon{
+                height: 24px;
+                width: 24px;
+            }
+
+            .profile-picture{
+                height: 32px;
+                width: 32px;
+                border-radius: 16px;
+            }
+            
